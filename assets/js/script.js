@@ -17,7 +17,11 @@ const auth = firebase.auth();
  // register
 
   const signup = (email,password) => {
-      const promise = auth.createUserWithEmailAndPassword(email,password);
+      const promise = auth.createUserWithEmailAndPassword(email,password)
+      .then(() => {
+        console.log('You are in');  
+        window.location.href = "./login.html";
+      })
       promise.catch(e => alert(e.message));
   }
  
@@ -59,7 +63,7 @@ const auth = firebase.auth();
       const email = document.querySelector("#email").value;
       const password = document.querySelector("#pass").value;
       console.log(email,password)
-      window.location.href = "./login.html";
       signup(email,password)
+      
   })
   

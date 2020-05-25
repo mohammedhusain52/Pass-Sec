@@ -1,0 +1,114 @@
+.AppModal {
+  --light-color: #a3a3a3;
+  --gradient-A-color: #1f2227;
+  --gradient-B-color: black;
+  --accent-color: #11151b;
+}
+
+@media (min-width: 576px) {
+  .AppModal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0px;
+    width: 65vw;
+
+  }
+}
+
+@media (max-width: 576px) {
+  .AppModal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0px;
+    width: 98vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .AppModal-form-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50%;
+  }
+}
+
+.AppModal-form-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .AppModal-form-form {
+    width: 120%;
+    margin-left: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .AppModal-form-form {
+    margin: 8px 0px;
+    width: 100%;
+  }
+}
+
+.AppModal-form-form-input {
+  margin-top: 36px;
+  border: none;
+  border-bottom: solid;
+  border-radius: 0px;
+  border-bottom-width: 1.2px;
+  border-bottom-color: var(--gradient-A-color);
+  outline: none;
+}
+
+.AppModal-form-form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 35px;
+}
+
+@media (min-width: 576px) {
+  .AppModal-button {
+    padding: 8px 20px 5px 20px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40%;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+@media (max-width: 575px) {
+  .AppModal-button  {
+    padding: 8px 20px 5px 20px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 65%;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.AppModal-button:hover, .AppModal-button:focus {
+  background-color: var(--gradient-A-color);
+  border-color: var(--gradient-A-color);
+  outline: none;
+}
+
+.form-group {
+  margin-top: 5%;
+  margin-left: 0%;
+}
+

@@ -1,0 +1,197 @@
+.signupModal {
+  --light-color: #a3a3a3;
+  --gradient-A-color: #1f2227;
+  --gradient-B-color: black;
+}
+
+.signupModal-promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  background-image: linear-gradient(var(--gradient-A-color), var(--gradient-B-color));
+}
+
+.signupModal-promo-icon {
+  color: white;
+}
+
+.signupModal-promo-illustration {
+  margin-bottom: 40%;
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+  .signupModal-promo-illustration {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .signupModal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    width: 55vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .signupModal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+    width: 98vw;
+  }
+}
+
+.signupModal-form-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signupModal-form-brand-logo {
+  margin-bottom: -8px;
+}
+
+.signupModal-form-brand-name {
+}
+
+@media (min-width: 576px) {
+  .signupModal-form-form {
+    margin-bottom: 8px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 567px) {
+  signupModal-form-form {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+
+.signupModal-form-form-input {
+  margin-top: 36px;
+  border: none;
+  border-bottom: solid;
+  border-radius: 0px;
+  border-bottom-width: 1.2px;
+  border-bottom-color: var(--gradient-A-color);
+  outline: none;
+}
+
+.signupModal-form-form-input::placeholder {
+  color: var(--light-color);
+}
+
+.signupModal-form-form-terms {
+  margin-top: 16px;
+}
+
+.signupModal-form-form-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom Checkbox */
+
+.signupModal-form-form-checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  margin-top: 2px;
+}
+
+.customCheckboxHover {
+  background-color: #ccc;
+}
+
+.signupModal-form-form-checkbox:checked ~ .signupModal-form-form-checkbox-custom {
+  background-color: var(--gradient-A-color);
+}
+
+.signupModal-form-form-checkbox-custom:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.signupModal-form-form-checkbox:checked ~ .signupModal-form-form-checkbox-custom:after {
+  display: block;
+}
+
+.signupModal-form-form-checkbox-custom:after {
+  left: 7px;
+  top: 3px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.signupModal-form-form-checkbox-label {
+  margin-left: 8px;
+  color: var(--light-color);
+}
+
+.signupModal-form-form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+@media (min-width: 576px) {
+  .signupModal-button {
+    padding: 8px 20px 5px 20px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40%;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+@media (max-width: 575px) {
+  .signupModal-button {
+    padding: 8px 20px 5px 20px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 65%;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.signupModal-button:hover, .signupModal-button:focus {
+  background-color: var(--gradient-A-color);
+  border-color: var(--gradient-A-color);
+  outline: none;
+}
+
+.signupModal-form-forgotPassword {
+  margin-top: 24px;
+  color: var(--accent-color);
+  font-size: 14px;
+}
+

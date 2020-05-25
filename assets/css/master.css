@@ -1,0 +1,169 @@
+:root {
+  --accent-color: #11151b;
+}
+
+.rightdiv {
+}
+
+.headmid {
+  height: 100px;
+  /*font-family: 'Modern Antiqua';*/
+}
+
+.headtop {
+  height: 20%;
+  padding-top: 28px;
+  text-align: center;
+  color: white;
+  margin-top: 2%;
+}
+
+.newway {
+  height: 300px;
+}
+
+.backblack {
+  background-color: black;
+  height: 8%;
+}
+
+.videosec {
+  height: 100vh;
+}
+
+.effects {
+  height: 50px;
+  width: 20%;
+  background-color: White!important;
+  border: none;
+  color: rgb(0,0,0);
+  font-family: 'ABeeZee';
+  font-size: 20px;
+  border: none;
+}
+
+.headlast {
+  height: 40%;
+  text-align: center;
+}
+
+.fontsforp {
+  font-size: 18px;
+  font-family: 'Poppins';
+  color: white;
+}
+
+.rightdiv {
+  height: 400px;
+}
+
+.rowforphone {
+  padding-top: 50px;
+}
+
+.fontsforp.pinsideright {
+  color: rgb(228,228,228);
+  margin-top: 7%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.easyclass {
+  color: white;
+  font-size: 33px;
+  font-family: 'Modern Antiqua';
+}
+
+.col-md-6.rightdivp2 {
+  padding-top: 8%;
+  text-align: center;
+}
+
+.insider {
+  width: 50%!important;
+  margin-top: 5%;
+  margin-bottom: 11%;
+}
+
+.onlyforcards {
+  text-align: center;
+  background-color: #000000;
+  margin-top: -10px;
+  height: 50%;
+  padding-bottom: 4%;
+  padding-top: 2%;
+}
+
+.card.3 {
+  margin-left: 20px;
+}
+
+.btn.btn-primary.hvr-rectangle-in.effects {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.margin {
+  /*margin-top: 20%;*/
+  margin-left: 2%;
+  display: inline-block;
+}
+
+.fontsforheading {
+  font-family: 'ABeeZee';
+  text-align: center;
+  padding-top: 2%;
+  color: white;
+}
+
+@media (max-width:840px) {
+  .headinginvideo {
+    position: absolute;
+    top: 38%;
+    color: white;
+    font-family: 'Red Hat Display';
+    font-weight: bold;
+    left: 20vw;
+    font-size: 52px;
+    background-attachment: fixed;
+    opacity: 0;
+  }
+}
+
+.headinginvideo {
+  position: absolute;
+  top: 38%;
+  color: white;
+  font-family: 'Red Hat Display';
+  font-weight: bold;
+  left: 32vw;
+  font-size: 52px;
+  background-attachment: fixed;
+}
+
+@media (max-width: 840px) {
+  .headinginvideo2 {
+    position: absolute;
+    top: 56%;
+    color: white;
+    font-family: 'Red Hat Display';
+    font-weight: bold;
+    left: 15vw;
+    font-size: 32px;
+    opacity: 0;
+  }
+}
+
+.headinginvideo2 {
+  position: absolute;
+  top: 56%;
+  color: white;
+  font-family: 'Red Hat Display';
+  font-weight: bold;
+  left: 22vw;
+  font-size: 32px;
+}
+
+.btn.btn-primary.hvr-rectangle-out.insider.effects {
+}
+

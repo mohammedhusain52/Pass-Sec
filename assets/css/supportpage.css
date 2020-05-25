@@ -1,0 +1,149 @@
+.img_support {
+  height: 0%;
+  width: 0%;
+}
+
+@media (min-width: 576px) {
+  .img_support {
+    height: 100%;
+    width: 50%;
+    margin-left: 50%;
+    position: relative;
+  }
+}
+
+.support_box {
+  height: 80vh;
+  width: 70vw;
+  background-color: rgb(231,231,231);
+  margin-top: 60px;
+  margin-left: 16%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.25);
+}
+
+.othersec {
+  position: absolute;
+  width: 35%;
+  height: 79.5%;
+}
+
+.heading {
+  text-align: center;
+  width: 200%;
+}
+
+@media (min-width: 576px) {
+  .heading {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.supp_head {
+  margin-top: 10%;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .supp_head {
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+}
+
+.para {
+  width: 200%;
+  height: 45%;
+  margin-top: 10%;
+  padding-left: 15%;
+  font-family: 'Red Hat Text';
+  font-size: 15px;
+}
+
+@media (min-width: 576px) {
+  .para {
+    font-size: 14px;
+    height: 40%;
+    width: 90%;
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 576px) {
+  .para {
+    font-size: 14px;
+    height: 40%;
+    width: 90%;
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 992px) {
+  .para {
+    font-size: 19px;
+  }
+}
+
+.contact-us {
+  height: 40%;
+  width: 200%;
+  margin-top: 0;
+  word-break: break-word;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .contact-us {
+    height: 37%;
+    width: 90%;
+    text-align: left;
+  }
+}
+
+.contact {
+  margin-top: 5%;
+  font-size: 16px;
+  font-family: Red Hat Display, sans-serif;
+}
+
+@media (min-width: 576px) {
+  .contact {
+    font-size: 17px;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    font-size: 19px;
+    margin-left: 10%;
+    /*margin-top: 0%;*/
+  }
+}
+
+.panel {
+  margin-top: 5px;
+}
+
+.navbar-light .navbar-text a {
+  padding-right: 15px;
+}
+
+.action-button {
+  width: 120px;
+  border-radius: 20px;
+  font-family: 'Actor';
+  font-size: 18px;
+}
+
+.spacing {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.support_box {
+  margin-bottom: 7%;
+}
+

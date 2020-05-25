@@ -1,0 +1,203 @@
+.loginModal {
+  --light-color: #a3a3a3;
+  --gradient-A-color: #1f2227;
+  --gradient-B-color: black;
+}
+
+.loginModal-promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  background-image: linear-gradient(var(--gradient-A-color), var(--gradient-B-color));
+}
+
+.loginModal-promo-icon {
+  color: rgb(255,255,255);
+}
+
+.loginModal-promo-illustration {
+  margin-bottom: 40%;
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+  .loginModal-promo-illustration {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .loginModal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    width: 55vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .loginModal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0px;
+    width: 98vw;
+  }
+}
+
+.loginModal-form-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginModal-form-brand-logo {
+  margin-bottom: -8px;
+}
+
+@media (min-width: 576px) {
+  .loginModal-form-form {
+    margin: 8px 0px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 567px) {
+  .loginModal-form-form {
+    margin: 8px 0px;
+    width: 100%;
+  }
+}
+
+.loginModal-form-form-input {
+  margin-top: 36px;
+  border: none;
+  border-bottom: solid;
+  border-radius: 0px;
+  border-bottom-width: 1.2px;
+  border-bottom-color: var(--gradient-A-color);
+  outline: none;
+}
+
+.loginModal-form-form-input::placeholder {
+  color: var(--light-color);
+}
+
+.loginModal-form-form-remember {
+  margin-top: 16px;
+}
+
+.loginModal-form-form-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom Checkbox */
+
+.loginModal-form-form-checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  margin-top: 2px;
+}
+
+.customCheckboxHover {
+  background-color: #ccc;
+}
+
+.loginModal-form-form-checkbox:checked ~ .loginModal-form-form-checkbox-custom {
+  background-color: var(--gradient-A-color);
+}
+
+.loginModal-form-form-checkbox-custom:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.loginModal-form-form-checkbox:checked ~ .loginModal-form-form-checkbox-custom:after {
+  display: block;
+}
+
+.loginModal-form-form-checkbox-custom:after {
+  left: 7px;
+  top: 3px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.loginModal-form-form-checkbox-label {
+  margin-left: 8px;
+  color: var(--light-color);
+}
+
+.loginModal-form-form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+@media (min-width: 576px) {
+  .loginModal-button {
+    padding: 8px 20px 5px 20px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40%;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+@media (max-width: 575px) {
+  .loginModal-button {
+    padding: 8px 20px 5px 20px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 65%;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.loginModal-button:hover, .loginModal-button:focus {
+  background-color: var(--gradient-A-color);
+  border-color: var(--gradient-A-color);
+  outline: none;
+}
+
+.loginModal-options-login {
+}
+
+@media (min-width: 576px) {
+  .loginModal-options-separator {
+    color: gray;
+  }
+}
+
+.loginModal-form-forgotPassword {
+  margin-top: 24px;
+  color: var(--accent-color);
+  font-size: 14px;
+}
+

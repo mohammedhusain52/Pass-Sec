@@ -1,0 +1,39 @@
+.benefits {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.benefits h1 {
+  font-size: 2.5em;
+}
+
+.Cards {
+  padding-top: 4%;
+  text-align: center;
+  /*align-content: center;*/
+  padding-left: 12%;
+  padding-right: 5%;
+}
+
+.row.counts {
+  background: black;
+  height: 188px;
+  padding-top: 5%;
+  padding-left: 12%;
+  color: white;
+}
+
+.counter {
+  border: solid white 2px;
+  height: 41px;
+  width: 135px;
+  text-align: center;
+  padding-top: 6px;
+  color: white;
+}
+
+.count-p {
+  margin-top: 5px;
+  margin-left: -6px;
+}
+

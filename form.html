@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Modern+Antiqua">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Text">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/ApplicationModal.css">
+    <link rel="stylesheet" href="assets/css/Article-Cards.css">
+    <link rel="stylesheet" href="assets/css/benefits.css">
+    <link rel="stylesheet" href="assets/css/cards-dnd.css">
+    <link rel="stylesheet" href="assets/css/Dark-Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="assets/css/loginModal.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/rectangleout-icon.css">
+    <link rel="stylesheet" href="assets/css/rectinbutton.css">
+    <link rel="stylesheet" href="assets/css/signupModal.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-Clean.css">
+    <link rel="stylesheet" href="assets/css/video.css">
+    <link rel="stylesheet" href="assets/css/work.css">
+    <link rel="stylesheet" href="assets/css/afterover.css">
+</head>
+<body class="bodyoflogin">
+<div class="mainblocklogin centered">
+    <div class="container">
+        <div class="row AppModal">
+            
+            <div class="col-md-12 col-lg-8 col-xl-8 AppModal-form">
+                <div class="AppModal-form-brand">
+                 <a href="work.html">
+                    <img
+                    class="AppModal-form-brand-name"
+                    src="https://passsecurity.s3.amazonaws.com/pass-sec-black.png"
+                />
+                
+                 </a>   
+                </div>
+                <form class="AppModal-form-form" id="userform1">
+                    <input
+                        type="text"
+                        class="form-control AppModal-form-form-input" id="name"
+                        placeholder="Name" name = "Name" required
+                    /><input
+                        type="email"
+                        class="form-control AppModal-form-form-input" id="email"
+                        placeholder="Email Address" name = "email" required
+                    />
+                    <input
+                        type="password" 
+                        class="form-control AppModal-form-form-input" id="pass"
+                        placeholder="Password" name = "password" required
+                    />
+                    <input
+                        type="number"
+                        class="form-control AppModal-form-form-input" id="age"
+                        placeholder="Age" name = "Age" required
+                    />
+                    <input
+                        type="number" 
+                        class="form-control AppModal-form-form-input" id="cn"
+                        placeholder="Contact Number" name = "contact" required
+                    />
+                    <input
+                        type="text"
+                        class="form-control AppModal-form-form-input" id="lf"
+                        placeholder="Location From" name = "LocationFrom" required
+                    />
+                    <input
+                        type="text"
+                        class="form-control AppModal-form-form-input"
+                        placeholder="Location To" name = "LocationTO" required id="lt"
+                    />
+                    
+                    <div class="form-group">
+                        <input id="photo"class="file"type="file" name="mainimage" 
+                        value="" onchange="getfile()"><br><br> 
+                  </div>
+                   
+                    <div
+                        class="flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row AppModal-form-form-options"
+                    >
+                        <button
+                            class="btn btn-primary AppModal-button AppModal-options-App"
+                            type="button"
+                        >
+                            SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-storage.js"></script>
+<script src="assets/js/formdata.js"></script>
+</body>
+</html>

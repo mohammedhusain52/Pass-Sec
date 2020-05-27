@@ -15,14 +15,17 @@ const db  = firebase.firestore();
 const auth = firebase.auth();
 
  // register
- 
+
   const signup = (email,password) => {
-      const promise = auth.createUserWithEmailAndPassword(email,password)
-      .then(() => {
-        console.log('You are in');  
+      document.querySelector('.load').innerHTML = `<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>`
+      const promise = auth.createUserWithEmailAndPassword(email,password).then(() => {
+        document.querySelector('.load').innerHTML = ""
         window.location.href = "./login.html";
       })
-      promise.catch(e => alert(e.message));
+      promise.catch(e => {
+        document.querySelector('.load').innerHTML = "";
+        alert(e.message);
+      });
   }
   
   document.querySelector("#userform1").addEventListener('submit',(e) => 

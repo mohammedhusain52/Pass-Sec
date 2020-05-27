@@ -1,10 +1,14 @@
-
+.container{
+  background-color: white;
+}
 .mainblocklogin{
     position: absolute;
     top: 6%;
     border: 1px solid black;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
-    margin-left: 7vw;
+    /* margin-left: 7vw; */
+    margin-left: 185px;
+    margin-top: 60px;
   }
   @media (max-width: 576px) {
   .mainblocklogin{
@@ -17,8 +21,8 @@
 }
   .bodyoflogin{
     background-color: white;
-    text-align: center;
-    align-items: center;
+    /* text-align: center;
+    align-items: center; */
   }
   .buttonforlogin{
     background-color: black;
@@ -30,8 +34,8 @@
     height: 45px;
     font-size: 126%;
     font-family: ABeeZee;
-    margin-left:28% ;
-    
+    margin-left: auto ;  
+    margin-right: auto;  
   }
 
   .centered{

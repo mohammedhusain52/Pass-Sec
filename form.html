@@ -38,10 +38,6 @@
 </head>
 <body class="bodyoflogin">
 <div class="mainblocklogin centered">
-    <video autoplay loop id="video-background" muted>
-        <source src="https://passsecurity.s3.amazonaws.com/pass-sec/banner.mp4    
-  " type="video/mp4">
-      </video>
     <div class="container">
         <div class="row AppModal">
             
@@ -55,7 +51,7 @@
                 
                  </a>   
                 </div>
-                <form class="AppModal-form-form" id="userform1">
+                <form class="AppModal-form-form" id="appform">
                     <input
                         type="text"
                         class="form-control AppModal-form-form-input" id="name"
@@ -90,21 +86,23 @@
                         class="form-control AppModal-form-form-input"
                         placeholder="Location To" name = "LocationTO" required id="lt"
                     />
-                    <div class="form-group" style="margin-left: 92px;">
+                    <div class="form-group" style="margin-left: 98px;">
                         <b>Upload your image</b>
+                        <b class="imgload"></b>
                         <input id="photo"class="file"type="file" name="mainimage" 
-                        value="" onchange="getfile()"><br><br> 
+                        value="" onchange="getfile()"> 
+                        <br> <br>
                     </div>
                    
                     <div>
-                        <button
+                        <input
                             class="btn btn-primary AppModal-button AppModal-options-App"
-                            type="button"
+                            type="submit"
                             style="margin-left: auto;margin-right: auto;"
-                        >
-                            SUBMIT</button>
+                        />
                     </div>
                 </form>
+                <div class="load"></div>
             </div>
         </div>
     </div>

@@ -36,7 +36,6 @@ const signin = (email,password) => {
       e.preventDefault();
       const email = document.querySelector("#email").value;
       const password = document.querySelector("#pass").value;
-      console.log(email,password)
       signin(email,password)
   })
   

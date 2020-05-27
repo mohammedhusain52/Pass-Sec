@@ -24,37 +24,6 @@ const auth = firebase.auth();
       })
       promise.catch(e => alert(e.message));
   }
-
-//login
-
-//   const signin = (email,password) => {
-//     const promise = auth.signInWithEmailAndPassword(email,password);
-//     console.log('You are in');  
-//     window.location.href = "http://127.0.0.1:5500/index1.html";
-//     promise.catch(e => alert(e.message));
-// }
-
-//logout
-
-// const logout = document.getElementById('log');
-// logout.addEventListener('click',() => {
-//   e.preventDefault();
-//   auth.signOut().then(() => {
-//     console.log("logout")
-//   })
-// })
-
-
-// login and register 
-
-  // document.querySelector("#userform").addEventListener('submit',(e) => 
-  // {
-  //     e.preventDefault();
-  //     const email = document.querySelector("#email").value;
-  //     const password = document.querySelector("#pass").value;
-  //     console.log(email,password)
-  //     signin(email,password)
-  // })
   
   document.querySelector("#userform1").addEventListener('submit',(e) => 
   {
@@ -62,7 +31,6 @@ const auth = firebase.auth();
       const email = document.querySelector("#email").value;
       const password = document.querySelector("#pass").value;
       console.log(email,password)
-      window.location.href = "./login.html";
       signup(email,password)
   })
   

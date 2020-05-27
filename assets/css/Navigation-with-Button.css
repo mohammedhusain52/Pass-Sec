@@ -310,3 +310,15 @@
   margin-bottom: 10px;
 }
 
+body {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.sized {
+  color: black;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+

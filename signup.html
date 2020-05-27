@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="assets/css/News-Cards.css">
     <link rel="stylesheet" href="assets/css/rectangleout-icon.css">
     <link rel="stylesheet" href="assets/css/rectinbutton.css">
-    <link rel="stylesheet" href="assets/css/signupModal.css">
+    <link rel="stylesheet" href="assets/css/signupModal.css ">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
     <link rel="stylesheet" href="assets/css/video.css">
@@ -39,43 +39,47 @@
     <link rel="stylesheet" href="assets/css/afterover.css">
 </head>
 <body class="bodyoflogin">
-
+    <video autoplay loop id="video-background" muted>
+        <source src="https://passsecurity.s3.amazonaws.com/pass-sec/banner.mp4    
+  " type="video/mp4">
+      </video>
     <div class="mainblocklogin"> 
     <div class="container">
-        <div class="row signupModal">
+        <div class="row loginModal">
             <div
-                class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 signupModal-promo"
+                class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 loginModal-promo"
                 style="background-color: #11151b;"
                 data-dismiss="modal"
             >
-                <img class="signupModal-promo-illustration" src="https://passsecurity.s3.amazonaws.com/lock+and+key.png" />
+                <img class="loginModal-promo-illustration" src="https://passsecurity.s3.amazonaws.com/lock+and+key.png" />
             </div>
             <div
-                class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 signupModal-form"
+                class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 loginModal-form"
             >
-                <div class="signupModal-form-brand">
+                <div class="loginModal-form-brand">
                   <a href="index.html">  <img
                         class="loginModal-form-brand-name"
                         src="https://passsecurity.s3.amazonaws.com/pass-sec-black.png"
                     />  </a>
                 </div>
-                <form class="signupModal-form-form" id="userform1">
+                <form class="loginModal-form-form" id="userform1">
      <input
                         type="email"
-                        class="form-control signupModal-form-form-input extraspacing" id="email"
+                        class="form-control loginModal-form-form-input extraspacing" id="email"
                         placeholder="Email"
                     /><input
                         type="password"
-                        class="form-control signupModal-form-form-input extraspacing" id="pass"
+                        class="form-control loginModal-form-form-input extraspacing" id="pass"
                         placeholder="Password"
                     />
                     
                     <div
-                        class="flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row signupModal-form-form-options">
+                        class="flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row loginModal-form-form-options">
                         <input type="submit" value="Register" class="buttonforlogin extraspacing">
-                            
                     </div>
                 </form>
+                <a class="loginModal-form-forgotPassword" href="./login.html">Already have an account?</a>
+                <div class="load"></div>
             </div>
         </div>
     </div>

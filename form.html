@@ -51,7 +51,7 @@
                 
                  </a>   
                 </div>
-                <form class="AppModal-form-form" id="userform1">
+                <form class="AppModal-form-form" id="appform">
                     <input
                         type="text"
                         class="form-control AppModal-form-form-input" id="name"
@@ -86,22 +86,23 @@
                         class="form-control AppModal-form-form-input"
                         placeholder="Location To" name = "LocationTO" required id="lt"
                     />
-                    
-                    <div class="form-group">
+                    <div class="form-group" style="margin-left: 98px;">
+                        <b>Upload your image</b>
+                        <b class="imgload"></b>
                         <input id="photo"class="file"type="file" name="mainimage" 
-                        value="" onchange="getfile()"><br><br> 
-                  </div>
+                        value="" onchange="getfile()"> 
+                        <br> <br>
+                    </div>
                    
-                    <div
-                        class="flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row AppModal-form-form-options"
-                    >
-                        <button
+                    <div>
+                        <input
                             class="btn btn-primary AppModal-button AppModal-options-App"
-                            type="button"
-                        >
-                            SUBMIT</button>
+                            type="submit"
+                            style="margin-left: auto;margin-right: auto;"
+                        />
                     </div>
                 </form>
+                <div class="load"></div>
             </div>
         </div>
     </div>

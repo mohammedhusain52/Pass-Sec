@@ -17,45 +17,25 @@ const auth = firebase.auth();
  // register
 
   const signup = (email,password) => {
+<<<<<<< HEAD
       const promise = auth.createUserWithEmailAndPassword(email,password)
       .then(() => {
         console.log('You are in');  
         window.location.href = "./login.html";
       })
       promise.catch(e => alert(e.message));
+=======
+      document.querySelector('.load').innerHTML = `<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>`
+      const promise = auth.createUserWithEmailAndPassword(email,password).then(() => {
+        document.querySelector('.load').innerHTML = ""
+        window.location.href = "./login.html";
+      })
+      promise.catch(e => {
+        document.querySelector('.load').innerHTML = "";
+        alert(e.message);
+      });
+>>>>>>> 3fa20578f8d7721b51788615ee6e5dc59695d4ca
   }
- 
-
-//login
-
-//   const signin = (email,password) => {
-//     const promise = auth.signInWithEmailAndPassword(email,password);
-//     console.log('You are in');  
-//     window.location.href = "http://127.0.0.1:5500/index1.html";
-//     promise.catch(e => alert(e.message));
-// }
-
-//logout
-
-// const logout = document.getElementById('log');
-// logout.addEventListener('click',() => {
-//   e.preventDefault();
-//   auth.signOut().then(() => {
-//     console.log("logout")
-//   })
-// })
-
-
-// login and register 
-
-  // document.querySelector("#userform").addEventListener('submit',(e) => 
-  // {
-  //     e.preventDefault();
-  //     const email = document.querySelector("#email").value;
-  //     const password = document.querySelector("#pass").value;
-  //     console.log(email,password)
-  //     signin(email,password)
-  // })
   
   document.querySelector("#userform1").addEventListener('submit',(e) => 
   {

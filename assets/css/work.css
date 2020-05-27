@@ -104,6 +104,7 @@
 .userDetails {
   height: 200px;
   background-color: white;
+  margin-top: 20%;
 }
 
 .col-md-12.container4but {
@@ -152,7 +153,7 @@
   position: absolute;
   top: 80%;
   background-color: white;
-  left: 27%;
+  left: 29%;
   color: black;
   border: 1px solid black;
   width: 40%;
@@ -163,7 +164,7 @@
   position: absolute;
   top: 80%;
   background-color: black;
-  left: 27%;
+  left: 29%;
   color: white;
   border: 1px solid black;
   width: 40%;

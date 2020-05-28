@@ -60,9 +60,10 @@
                         src="https://passsecurity.s3.amazonaws.com/pass-sec-black.png"
                     /> </a> 
                 </div>
-                <form class="loginModal-form-form">
+                <form class="loginModal-form-form" id="reset">
                     <input
                         type="email"
+                        id="email"
                         class="form-control loginModal-form-form-input extraspacing"
                         placeholder="Enter your Email"
                     />
@@ -78,7 +79,10 @@
         </div>
     </div>
   </div> 
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+  <script src="assets/js/forget.js"></script>
 
-    
 </body>
+
 </html>

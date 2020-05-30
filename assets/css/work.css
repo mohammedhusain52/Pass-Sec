@@ -2,11 +2,42 @@
   height: auto;
   background-color: rgb(255,255,255);
   text-align: center;
-  padding-top: 3%;
+  padding-top: 1%;
 }
 
 .block {
-  margin-top: 5%;
+  margin-top: 1%;
+}
+.yahihogaab
+{
+  margin-left: 16%;
+  margin-right: 15%;
+  font-size: 20px;
+  text-align: justify;
+}
+article{
+  padding-top: 6%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+}
+.workmode{
+  margin-top: 15%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+.workwork{
+  font-size: 50px;
+  color: #2f2f2f;
+  font-weight: 800;
+}
+/* .yeswe{
+  width: 50%;
+  text-align: right;
+} */
+.rules{
+  font-size: 30px;
+
 }
 
 @media (max-width: 1000px) {
